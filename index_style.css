@@ -49,11 +49,11 @@ ul {
 
 .input[type=text]{
     float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    border: none;
-    font-size: 50px;
+    padding: 2px;
+    margin-top: 4px;
+    margin-right: 5px;
+    border: blue;
+    font-size: 30px;
    
 }
 
