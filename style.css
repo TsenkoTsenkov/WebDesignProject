@@ -1,0 +1,23 @@
+:root{
+    --primary: rgb(255, 255, 255);
+}
+
+html{
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background: var(--primary);
+    margin: 25px 20px;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
