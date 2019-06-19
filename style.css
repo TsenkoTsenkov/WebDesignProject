@@ -5,7 +5,8 @@
 }
 
 img{
-    max-width: 100%;
+  width: 100px;
+  height: 100px;
 }
 
 html{
@@ -61,17 +62,8 @@ body{
     grid-gap: 0px;
   }
 
-.main-nav ul{
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: repeat(5, 1fr);
-}
 
-.top-box-a {
-    grid-area: top-box-a;
-  }
+
 
   .btn {
     background: var(--dark);
@@ -88,7 +80,7 @@ body{
     background: url(Images/product-review.png);
     background-size: cover;
     background-position: center;
-    padding: 25px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items:start;
@@ -97,7 +89,7 @@ body{
 
 .showcase h1{
     font-size: 4rem;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     color: var(--primary);
 }
 
@@ -111,54 +103,33 @@ body{
     background: var(--primary);
     text-align: center;
     padding: 1.5rem 2rem;
-    box-shadow: var(--shadow);
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-.top-box {
-    background: var(--primary);
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    box-shadow: var(--shadow);
-    padding: 1.5rem;
-  }
 
-.top-box .price{
-    font-size: 45px;
+.boxes{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.top-container{
-    display: gird;
-    grid-gap: 20px;
-    grid-template-areas:
-        'showcase showcase top-box-a'
-        
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 2px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.showcase{
-    grid-area: showcase;
-}
-
-.main-nav a{
-    background: var(--primary);
-    display: block;
-    text-decoration: none;
-    padding: 15px;
-    text-align: center;
-    color: var(--dark);
-    text-transform: uppercase;
-    font-size: 25px;
-}
-
-.main-nav a:hover{
-    background: var(--dark);
-    color: var(--light);
-}
-
-#revImg{
-    width: 100px;
-    height: 100px;
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
 footer{
@@ -177,19 +148,25 @@ footer{
       font-size: 2.5rem;
     }
   
-    .main-nav ul {
+    .top-nav ul {
       grid-template-columns: 1fr;
+
     }
-  
-    .info {
-      grid-template-columns: 1fr;
-    }
-  
-    .info .btn {
+
+    #reviewLogo{
       display: block;
-      text-align: center;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
+
+    #searchIcon{
+      display: none;
+    }
+
+    .boxes{
+      grid-template-columns: 1fr;
+    }
+ 
   }
   
   
